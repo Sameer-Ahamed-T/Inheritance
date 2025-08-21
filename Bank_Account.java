@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Base
+class Bank
 {
   protected String Name;
   protected int Acc_no;
@@ -57,7 +57,7 @@ class Current extends Bank
     System.out.println("The Current Account Balance:"+Balance2);
   }
 }
-class Bank
+class Bank_Account
 {
   public static void main(String[] args)
   {
