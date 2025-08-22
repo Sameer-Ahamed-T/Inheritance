@@ -19,6 +19,13 @@ class Bank_A
     {
         Balance2+=c;
     }
+     public void Display()
+    {
+        System.out.println("Name:"+Name);
+        System.out.println("Account Number:"+Acc_no);
+        System.out.println("The Savings Account Balance:"+Balance1);
+        System.out.println("The Current Account Balance:"+Balance2);
+    }
 }
 class Savings extends Bank_A
 {
@@ -57,13 +64,6 @@ class Current extends Bank_A
             return;
         }
         Balance2-=withdrawl;
-    }
-    void Display()
-    {
-        System.out.println("Name:"+Name);
-        System.out.println("Account Number:"+Acc_no);
-        System.out.println("The Savings Account Balance:"+Balance1);
-        System.out.println("The Current Account Balance:"+Balance2);
     }
 }
 class Bank_Account
@@ -116,7 +116,7 @@ class Bank_Account
         for(int i=0;i<n;i++)
         {
             System.out.println("The Details of the Customer "+(i+1)+":");
-            C[i].Display();
+            S[i].Display();
         }
     }
 }
