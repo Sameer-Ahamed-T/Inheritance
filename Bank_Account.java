@@ -74,6 +74,7 @@ class Bank_Account
         int n;
         System.out.print("ENter the number of Objects:");
         n=sc.nextInt();
+        Bank_A[] B=new Bank_A[n];
         Savings[] S=new Savings[n];
         Current[] C=new Current[n];
         int k;
@@ -116,7 +117,7 @@ class Bank_Account
         for(int i=0;i<n;i++)
         {
             System.out.println("The Details of the Customer "+(i+1)+":");
-            S[i].Display();
+            B[i].Display();
         }
     }
 }
